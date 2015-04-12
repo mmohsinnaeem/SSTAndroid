@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5393df"
+        android:gravity="center_horizontal"
+        android:padding="20dip"
+        android:text="USLAB000001"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/details_Container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header" >
+
+        <TextView
+            android:id="@+id/txt_detail_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="Control Moment Gyroscope (CMG)-1 On-Line"
+            android:textColor="#5393df"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_detail_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_detail_Name"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:gravity="center_horizontal"
+            android:text="Control Moment Gyroscope (CMG)-1 On-Line. Status flag indicating that CMG-1 is in active use for attitude control by the GNC software when the U.S. segment is in active control of the ISS."
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_detail_Digit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_Container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/board"
+        android:padding="20dip"
+        android:text="1600.2321"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
